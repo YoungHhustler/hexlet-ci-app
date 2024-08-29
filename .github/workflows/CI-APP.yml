@@ -1,0 +1,6 @@
+# сетап проекта
+- run: make setup
+
+- run: make test
+
+- run: make lint
