@@ -1,9 +1,11 @@
 # сетап проекта
 name: CI-APP
 
-steps:
-  - run: make setup
+on: push
+jobs: 
+  steps:
+    - run: make setup
 
-  - run: make test
+    - run: make test
 
-  - run: make lint
+    - run: make lint
