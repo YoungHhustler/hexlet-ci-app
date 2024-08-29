@@ -1,6 +1,9 @@
 # сетап проекта
-- run: make setup
+name: CI-APP
 
-- run: make test
+steps:
+  - run: make setup
 
-- run: make lint
+  - run: make test
+
+  - run: make lint
